@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  
+  <groupId>com.xiaolin</groupId>
+  <artifactId>xiaolin-common</artifactId>
+  <packaging>pom</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <modules>
+    <module>fish-common</module>
+  </modules>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>maven2</id>
+            <url>http://repo2.maven.org/maven2</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <distributionManagement>
+        <repository>
+            <id>moredian-nexus-release</id>
+            <url>http://mvn.moredian.com:8000/nexus/content/repositories/releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>moredian-nexus-snapshots</id>
+            <name>local private nexus snapshots</name>
+            <url>http://mvn.moredian.com:8000/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+  
+</project>
